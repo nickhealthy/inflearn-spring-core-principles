@@ -50,6 +50,7 @@ dependencies {
     implementation 'org.yaml:snakeyaml:1.33'
 */
 
+/*
     //2. 스프링 부트 라이브러리 버전 관리
     //스프링 웹, MVC
     implementation 'org.springframework:spring-webmvc'
@@ -66,11 +67,12 @@ dependencies {
     implementation 'org.slf4j:jul-to-slf4j'
     //YML 관련
     implementation 'org.yaml:snakeyaml'
-
-/*
-    //3. 스프링 부트 스타터
-    implementation 'org.springframework.boot:spring-boot-starter-web'
 */
+
+    //3. 스프링 부트 스타터 - 프로젝트를 시작하는데 필요한 라이브러리를 모아둔 스프링 부트 스타터를 제공한다.
+    // - 이 라이브러리 하나로 위에서 등록했던 모든 라이브러리가 포함된다.
+    // - https://docs.spring.io/spring-boot/reference/using/build-systems.html#using.build-systems.starters
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
 tasks.named('test') {
