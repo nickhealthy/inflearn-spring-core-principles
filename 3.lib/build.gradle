@@ -1,6 +1,9 @@
 plugins {
     id 'org.springframework.boot' version '3.0.2'
-    //id 'io.spring.dependency-management' version '1.1.0'
+    // 스프링 부트 라이브러리 버전 관리 기능을 사용하려면 아래 플러그인을 사용해야 한다.
+    // spring-boot-dependencies`에 있는 다음 bom 정보를 참고한다.
+    // - https://github.com/spring-projects/spring-boot/blob/main/spring-boot-project/spring-boot-dependencies/build.gradle
+    id 'io.spring.dependency-management' version '1.1.0'
     id 'java'
 }
 
@@ -28,7 +31,7 @@ repositories {
  * - 스프링 부트 스타터 제공(버전 뿐 아니라, 스타터 하나로 필요한 라이브러리들을 자동으로 포함시켜준다)
  */
 dependencies {
-
+/*
     //1. 라이브러리 직접 지정(스프링 부트가 나오기 전에 했던 방식)
     //스프링 웹 MVC
     implementation 'org.springframework:spring-webmvc:6.0.4'
@@ -45,8 +48,8 @@ dependencies {
     implementation 'org.slf4j:jul-to-slf4j:2.0.6'
     //YML 관련
     implementation 'org.yaml:snakeyaml:1.33'
+*/
 
-/*
     //2. 스프링 부트 라이브러리 버전 관리
     //스프링 웹, MVC
     implementation 'org.springframework:spring-webmvc'
@@ -63,7 +66,6 @@ dependencies {
     implementation 'org.slf4j:jul-to-slf4j'
     //YML 관련
     implementation 'org.yaml:snakeyaml'
-*/
 
 /*
     //3. 스프링 부트 스타터
