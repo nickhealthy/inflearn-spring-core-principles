@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  * 문제 발생: DB에 데이터를 보관하고 관리하기 위해 아래와 같은 객체들을 항상 설정하고 스프링 빈으로 설정해야 하는 번거로움이 있다!
  */
 @Slf4j
-@Configuration
+//@Configuration
 public class DbConfig {
 
     @Bean
