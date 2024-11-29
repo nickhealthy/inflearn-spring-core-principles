@@ -5,6 +5,9 @@ import memory.MemoryFinder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 메모리 관련 라이브러리 설정
+ */
 @Configuration
 public class MemoryConfig {
 
