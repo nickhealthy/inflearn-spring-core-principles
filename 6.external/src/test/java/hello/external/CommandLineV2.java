@@ -25,15 +25,14 @@ public class CommandLineV2 {
         // Program Arguments에 작성
         // --url=devdb --username=dev_user --password=dev_pw mode=on
         DefaultApplicationArguments appArgs = new DefaultApplicationArguments(args);
-        log.info("SourceArgs = {}", List.of(appArgs.getSourceArgs()));
-        log.info("NonOptionArgs = {}", appArgs.getNonOptionArgs());
-        log.info("OptionNames = {}", appArgs.getOptionNames());
+        log.info("SourceArgs = {}", List.of(appArgs.getSourceArgs()));  // 커맨드라인 인수 전부를 출력
+        log.info("NonOptionArgs = {}", appArgs.getNonOptionArgs());     // mode=on 출력, 옵션 인수가 아님, key=value 형식으로 파싱되지 않는다.
+        log.info("OptionNames = {}", appArgs.getOptionNames());         // key=value 형식으로 사용되는 옵션 인수
 
         Set<String> optionNames = appArgs.getOptionNames();
         for (String optionName : optionNames) {
             log.info("option args {}={}", optionName, appArgs.getOptionValues(optionName));
         }
-
 
         /*
         * url=devdb
