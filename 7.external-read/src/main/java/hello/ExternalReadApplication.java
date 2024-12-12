@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Import;
  * ConfigurationProperties 덕분에 최종적으로 '타입 안전' + '검증' 효과를 얻을 수 있었으며, 또 매우 편리하게 외부 설정을 사용할 수 있었다.
  */
 @Import(MyDataSourceConfigV3.class)
-@SpringBootApplication(scanBasePackages = "hello.datasource")
+@SpringBootApplication(scanBasePackages = {"hello.datasource", "hello.pay"})
 public class ExternalReadApplication {
 
     public static void main(String[] args) {
