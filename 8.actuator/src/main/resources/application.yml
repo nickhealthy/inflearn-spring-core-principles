@@ -1,0 +1,6 @@
+# 엑츄에이터 기능 설정 - 웹 환경에서 모두 보이도록
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
