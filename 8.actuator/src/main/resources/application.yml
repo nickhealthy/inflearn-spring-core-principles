@@ -1,5 +1,8 @@
 # 엑츄에이터 기능 설정 - 웹 환경에서 모두 보이도록
 management:
+  endpoint:
+    shutdown:
+      enabled: true # 엔드포인트 활성화(엔드포인트 활성화 + 노출이 되어야 해당 기능을 사용할 수 있다)
   endpoints:
     web:
       exposure:
