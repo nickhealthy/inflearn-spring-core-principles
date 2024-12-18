@@ -3,6 +3,9 @@ management:
   endpoint:
     shutdown:
       enabled: true # 엔드포인트 활성화(엔드포인트 활성화 + 노출이 되어야 해당 기능을 사용할 수 있다)
+    health:
+      show-components: always # 각 헬스 컴포넌트의 상태 정보만 간략하게 노출
+  #      show-details: always # 헬스 정보 디테일
   endpoints:
     web:
       exposure:
